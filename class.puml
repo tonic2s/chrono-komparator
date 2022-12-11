@@ -1,0 +1,32 @@
+@startuml
+
+skinparam nodesep 10
+skinparam ranksep 35
+skinparam linetype ortho
+hide empty members
+
+class Logger
+class MainController
+
+class InputController <<Encoder & Serial>>
+MainController o-- InputController
+
+class DisplayController
+MainController o-- DisplayController
+
+class StatusLEDController
+MainController o-- StatusLEDController
+
+class SensorController
+MainController o-- SensorController
+
+interface SignalConditioningStrategy
+class ConcreteSignalConditioningController extends SignalConditioningStrategy
+SensorController o-- ConcreteSignalConditioningController
+
+interface SignalProcessingStrategy
+class ConcreteSignalProcessingController extends SignalProcessingStrategy
+SensorController o-- ConcreteSignalProcessingController
+
+
+@enduml

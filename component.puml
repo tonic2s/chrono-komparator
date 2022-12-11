@@ -1,0 +1,27 @@
+@startuml
+component MCU
+component "USB 1.1 Interface" as usb
+
+component Display
+
+component "Status LEDs" as leds
+
+component "Rotary Encoder" as encoder
+component "Digital Potentiometer" as poti
+
+component "Sensor Data Analog" as sensorAnalog
+component "Sensor Data Digital" as sensorDigital
+
+
+MCU <-right-> usb
+
+MCU <-up- encoder
+MCU <-up- sensorAnalog
+MCU <-up- sensorDigital
+
+MCU -down-> Display
+MCU -down-> poti
+MCU -down-> leds
+
+
+@enduml
