@@ -1,4 +1,5 @@
-# chronokomparator
+# Chrono Komparator
+
 A watch timing machine based on the RP2040
 
 ## Datasheets
@@ -8,6 +9,6 @@ A watch timing machine based on the RP2040
 - https://shop.lcd-module.com/media/attachment/file/eng/pdf/grafik/W128032-XALG.pdf
 
 ## Diagrams
-![class diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/tonic2s/chronokomparator/main/class.puml)
+![class diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/tonic2s/chrono-komparator/main/class.puml)
 
-![component diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/tonic2s/chronokomparator/main/component.puml)
+![component diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/tonic2s/chrono-komparator/main/component.puml)
